@@ -27,6 +27,9 @@ importers:
       '@nestjs/testing':
         specifier: ^11.0.1
         version: 11.1.24(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))
+      '@stackra/ts-logger':
+        specifier: github:stackra-inc/ts-logger#6e654dd
+        version: https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10(@vivtel/metadata@1.0.5(reflect-metadata@0.2.2))
       '@stackra/tsup-config':
         specifier: ^1.0.12
         version: 1.0.12(tsup@8.5.1(postcss@8.5.15)(typescript@6.0.3))(typescript@6.0.3)
@@ -530,6 +533,16 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@stackra/ts-logger@https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10':
+    resolution: {tarball: https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10}
+    version: 1.0.0
+    peerDependencies:
+      '@vivtel/metadata': ^1.0.5
+      react: 19.2.3
+    peerDependenciesMeta:
+      react:
+        optional: true
+
   '@stackra/tsup-config@1.0.12':
     resolution: {integrity: sha512-qqRHJJgJSHEwFVpJ089T1yTYcQb8mbRhv5bJlHVbuomo4euB+heuurwXJZcXV48+LDHK0tuJiypo2hZoHiKb2g==}
     engines: {node: '>=22', pnpm: '>=9.0.0'}
@@ -598,6 +611,11 @@ packages:
 
   '@vitest/utils@4.1.7':
     resolution: {integrity: sha512-T532WBu791cBxJlCl6SO+J14l81DQx6uQHm1bQbmCDY7nqlEIgkza/UFnSBNaUtSf41unldDFjdOBYEQC4b5Hw==}
+
+  '@vivtel/metadata@1.0.5':
+    resolution: {integrity: sha512-NFmPknEPcsQq+mDYcIVcmPCiHUx5noal34AkJjRXlUeSuN7HPjPfbM9nS8gqFN+YWt8lhqOiCUgYnMu1tjxlaQ==}
+    peerDependencies:
+      reflect-metadata: ^0.2.2
 
   acorn@8.16.0:
     resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
@@ -1462,6 +1480,11 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.60.4':
     optional: true
 
+  '@stackra/ts-logger@https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10(@vivtel/metadata@1.0.5(reflect-metadata@0.2.2))':
+    dependencies:
+      '@vivtel/metadata': 1.0.5(reflect-metadata@0.2.2)
+      consola: 3.4.2
+
   '@stackra/tsup-config@1.0.12(tsup@8.5.1(postcss@8.5.15)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@stackra/typescript-config': 1.0.12(typescript@6.0.3)
@@ -1544,6 +1567,10 @@ snapshots:
       '@vitest/pretty-format': 4.1.7
       convert-source-map: 2.0.0
       tinyrainbow: 3.1.0
+
+  '@vivtel/metadata@1.0.5(reflect-metadata@0.2.2)':
+    dependencies:
+      reflect-metadata: 0.2.2
 
   acorn@8.16.0: {}
 
