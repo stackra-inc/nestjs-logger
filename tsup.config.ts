@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   splitting: false,
   treeshake: true,
-  external: ['@nestjs/common', '@nestjs/core', '@stackra/ts-logger', 'pino-pretty'],
+  external: ['@nestjs/common', '@nestjs/core', 'pino-pretty'],
 });
