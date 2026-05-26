@@ -62,6 +62,6 @@
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
     "vitest": "^4.1.7",
-    "@stackra/ts-logger": "github:stackra-inc/ts-logger#6e654dd"
+    "@stackra/ts-logger": "github:stackra-inc/ts-logger#main"
   }
 }
