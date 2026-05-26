@@ -28,8 +28,8 @@ importers:
         specifier: ^11.0.1
         version: 11.1.24(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))
       '@stackra/ts-logger':
-        specifier: github:stackra-inc/ts-logger#6e654dd
-        version: https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10(@vivtel/metadata@1.0.5(reflect-metadata@0.2.2))
+        specifier: github:stackra-inc/ts-logger#main
+        version: https://codeload.github.com/stackra-inc/ts-logger/tar.gz/7f5afb74800bf3881fe0d1aef1b24af804eb4e61(@vivtel/metadata@1.0.5(reflect-metadata@0.2.2))
       '@stackra/tsup-config':
         specifier: ^1.0.12
         version: 1.0.12(tsup@8.5.1(postcss@8.5.15)(typescript@6.0.3))(typescript@6.0.3)
@@ -533,8 +533,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@stackra/ts-logger@https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10':
-    resolution: {tarball: https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10}
+  '@stackra/ts-logger@https://codeload.github.com/stackra-inc/ts-logger/tar.gz/7f5afb74800bf3881fe0d1aef1b24af804eb4e61':
+    resolution: {tarball: https://codeload.github.com/stackra-inc/ts-logger/tar.gz/7f5afb74800bf3881fe0d1aef1b24af804eb4e61}
     version: 1.0.0
     peerDependencies:
       '@vivtel/metadata': ^1.0.5
@@ -1480,7 +1480,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.60.4':
     optional: true
 
-  '@stackra/ts-logger@https://codeload.github.com/stackra-inc/ts-logger/tar.gz/6e654ddbff7def65d02ffd565e7271a2d8fe1e10(@vivtel/metadata@1.0.5(reflect-metadata@0.2.2))':
+  '@stackra/ts-logger@https://codeload.github.com/stackra-inc/ts-logger/tar.gz/7f5afb74800bf3881fe0d1aef1b24af804eb4e61(@vivtel/metadata@1.0.5(reflect-metadata@0.2.2))':
     dependencies:
       '@vivtel/metadata': 1.0.5(reflect-metadata@0.2.2)
       consola: 3.4.2
